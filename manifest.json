@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Achavi addon",
+  "version": "0.0.1",
+
+  "description": "Add links to achavi on changesets of the openstreetmap.org history tab",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.openstreetmap.org/history"],
+      "js": ["achavi.js"]
+    }
+  ]
+
+}
