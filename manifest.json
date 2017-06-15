@@ -8,7 +8,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.openstreetmap.org/history"],
+      "matches": ["http://www.openstreetmap.org/*"],
       "js": ["achavi.js"]
     }
   ]
