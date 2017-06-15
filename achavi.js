@@ -58,7 +58,6 @@ function addSidebarObserver() {
 function addChangesetsObserver() {
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            console.log(mutation.type);
             if (mutation.type == 'attributes'){
                 return;
             }
