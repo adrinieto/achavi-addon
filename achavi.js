@@ -14,7 +14,7 @@ function createLink(changesetId) {
 }
 
 function searchChangesets() {
-    var changesetsList = document.querySelectorAll('#sidebarContent ol.changesets');
+    var changesetsList = document.querySelectorAll('#sidebar_content ol.changesets');
 
     for (var j = 0; j < changesetsList.length; j++) {
         var changesets = changesetsList[j].getElementsByTagName("li");
