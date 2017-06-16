@@ -44,7 +44,7 @@ function showButtonInChangesetDetailPage() {
 function scanPage() {
     if (isChangesetDetailPage()) {
         showButtonInChangesetDetailPage();
-    } else {
+    } else if (isChangesetListPage()) {
         searchChangesets();
         addChangesetsObserver();
     }
@@ -52,6 +52,10 @@ function scanPage() {
 
 function isChangesetDetailPage() {
     return window.location.pathname.indexOf("/changeset/") != -1;
+}
+
+function isChangesetListPage() {
+    return window.location.pathname.indexOf("/history") != -1;
 }
 
 /**
